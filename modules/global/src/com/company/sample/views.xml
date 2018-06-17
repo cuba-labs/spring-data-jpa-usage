@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<views xmlns="http://schemas.haulmont.com/cuba/view.xsd">
+    <view class="com.company.sample.entity.Order"
+          extends="_local"
+          name="order-view">
+        <property name="customer"
+                  view="_minimal"/>
+    </view>
+    <view class="com.company.sample.entity.Customer"
+          extends="_local"
+          name="customer-view">
+        <property name="address"
+                  view="_minimal">
+            <property name="city"/>
+            <property name="street"/>
+        </property>
+    </view>
+</views>
